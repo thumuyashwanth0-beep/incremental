@@ -76,18 +76,75 @@ async function clickCookiesNext() {
   return clickById('accept-cookies-button');
 }
 
+// The whole cookies step (checkbox + "Next" button) doesn't always appear at all - give it a
+// short timeout and move straight on to waiting for the question if it never shows up, instead
+// of failing the whole flow.
+async function maybeClickCookiesNext({ timeout = 3000 } = {}) {
+  try {
+    await clickById('accept-cookies-button', { timeout });
+    return true;
+  } catch (e) {
+    console.log('No cookies "Next" button appeared - skipping.');
+    return false;
+  }
+}
+
+// Tracks where the flow currently is, so mid-run you can open the console and call
+// getCurrentStep() to see what it's stuck on instead of guessing.
+let CURRENT_STEP = 'idle';
+function setStep(step) {
+  CURRENT_STEP = step;
+  console.log(`[STEP ${new Date().toLocaleTimeString()}] ${step}`);
+}
+function getCurrentStep() {
+  return CURRENT_STEP;
+}
+
+function isQuestionVisible() {
+  return !!document.querySelector('[aria-labelledby="question-data"]');
+}
+
+// After clicking cookies "Next" the question screen can take a while to render. Waits up to
+// 30s, and if it's still not there, waits up to another 20s before giving up (50s total) -
+// returns false instead of throwing so the caller can skip this KCQ rather than crash the loop.
+async function waitForQuestionToLoad() {
+  setStep('Waiting for question to load (up to 30s)...');
+  try {
+    await waitFor(() => isQuestionVisible(), { timeout: 30000, what: 'question to render' });
+    setStep('Question loaded.');
+    return true;
+  } catch (e) {
+    setStep('Question not visible after 30s - waiting up to 20s more...');
+    try {
+      await waitFor(() => isQuestionVisible(), { timeout: 20000, what: 'question to render (extended wait)' });
+      setStep('Question loaded (after extended wait).');
+      return true;
+    } catch (e2) {
+      setStep('Question still not visible after 50s total - page likely failed to load. Skipping.');
+      return false;
+    }
+  }
+}
+
 async function completeTestFlow() {
-  console.log('Clicking "Take Test" / "Retake Test"...');
+  setStep('Clicking "Take Test" / "Retake Test"...');
   await clickTakeTest();
 
-  console.log('Waiting for "Agree & Proceed"...');
+  setStep('Waiting for "Agree & Proceed"...');
   await clickAgreeAndProceed();
 
-  console.log('Checking for cookies consent checkbox...');
+  setStep('Checking for cookies consent checkbox...');
   await maybeEnableCookiesConsent();
 
-  console.log('Clicking "Next"...');
-  await clickCookiesNext();
+  setStep('Checking for cookies "Next" button...');
+  await maybeClickCookiesNext();
 
-  console.log('Test flow complete.');
+  const loaded = await waitForQuestionToLoad();
+  if (!loaded) {
+    setStep('Test flow skipped - question never loaded.');
+    return { ok: false, reason: 'question-not-loaded' };
+  }
+
+  setStep('Test flow complete - question is visible.');
+  return { ok: true };
 }
