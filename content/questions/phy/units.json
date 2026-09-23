@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-dim-001",
+      "topicId": "phy.units.si-dimensions",
+      "type": "single",
+      "stem": "The dimensional formula of Planck's constant is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$[ML^2T^{-2}]$",
+          "misconceptionId": "phy.units.si-dimensions.energy-vs-action",
+          "whyWrong": "These are the dimensions of energy."
+        },
+        {
+          "key": "B",
+          "text": "$[ML^2T^{-1}]$"
+        },
+        {
+          "key": "C",
+          "text": "$[MLT^{-1}]$",
+          "whyWrong": "These are the dimensions of linear momentum."
+        },
+        {
+          "key": "D",
+          "text": "$[ML^2T^{-3}]$",
+          "whyWrong": "These are the dimensions of power."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** use $E = h\\nu$.\n\n$[h] = \\dfrac{[E]}{[\\nu]} = \\dfrac{[ML^2T^{-2}]}{[T^{-1}]} =$ **$[ML^2T^{-1}]$** (the same as angular momentum).",
+      "hints": [
+        "Which simple equation contains $h$?"
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 40,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

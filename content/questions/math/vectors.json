@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-vec-001",
+      "topicId": "math.vectors.products",
+      "type": "numerical",
+      "stem": "If $\\vec a = \\hat i + 2\\hat j + 2\\hat k$ and $\\vec b = 2\\hat i - \\hat j + 2\\hat k$, find $\\vec a \\cdot \\vec b$.",
+      "answer": {
+        "kind": "numeric",
+        "value": 4,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** multiply matching components and add.\n\n$\\vec a \\cdot \\vec b = (1)(2) + (2)(-1) + (2)(2) = 2 - 2 + 4 =$ **4**",
+      "hints": [
+        "$\\vec a \\cdot \\vec b = a_1b_1 + a_2b_2 + a_3b_3$"
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 40,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

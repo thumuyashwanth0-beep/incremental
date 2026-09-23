@@ -1,0 +1,1 @@
+ALTER TABLE "practice_sessions" ADD COLUMN "current_review_item_id" uuid;

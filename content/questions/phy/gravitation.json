@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-grav-001",
+      "topicId": "phy.gravitation.satellites",
+      "type": "numerical",
+      "stem": "A planet has the same average density as the Earth but twice its radius. If the escape velocity from the Earth is $11.2\\ \\text{km s}^{-1}$, find the escape velocity from the planet in $\\text{km s}^{-1}$.",
+      "answer": {
+        "kind": "numeric",
+        "value": 22.4,
+        "tolerance": 0.1
+      },
+      "solution": "**Key idea:** $v_e = \\sqrt{2GM/R}$ and $M = \\tfrac43\\pi R^3 \\rho$, so $v_e = R\\sqrt{\\tfrac83 \\pi G\\rho} \\propto R$ at fixed density.\n\n1. Radius doubles → $v_e$ doubles.\n2. **$v_e = 22.4\\ \\text{km s}^{-1}$**",
+      "hints": [
+        "Write the mass in terms of density and radius."
+      ],
+      "difficulty": 3,
+      "expectedTimeSec": 120,
+      "skills": [
+        "proportional-reasoning"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

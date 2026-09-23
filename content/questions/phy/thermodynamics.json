@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-thermo-001",
+      "topicId": "phy.thermodynamics.processes",
+      "type": "single",
+      "stem": "An ideal monatomic gas at $300\\ \\text{K}$ is compressed adiabatically to $\\tfrac18$ of its initial volume. Its final temperature is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$600\\ \\text{K}$",
+          "whyWrong": "Used exponent $1/3$. For monatomic $\\gamma - 1 = 2/3$."
+        },
+        {
+          "key": "B",
+          "text": "$1200\\ \\text{K}$"
+        },
+        {
+          "key": "C",
+          "text": "$2400\\ \\text{K}$",
+          "whyWrong": "Used $T \\propto 1/V$ (exponent 1), which has no basis for an adiabatic process."
+        },
+        {
+          "key": "D",
+          "text": "$300\\ \\text{K}$",
+          "misconceptionId": "phy.thermodynamics.processes.adiabatic-as-isothermal",
+          "whyWrong": "Temperature is constant only in an isothermal process."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** $TV^{\\gamma-1} = \\text{constant}$, with $\\gamma = \\tfrac53$ for a monatomic gas.\n\n1. $T_2 = T_1 \\left(\\dfrac{V_1}{V_2}\\right)^{\\gamma - 1} = 300 \\times 8^{2/3}$\n2. $8^{2/3} = 4$\n3. **$T_2 = 1200\\ \\text{K}$**",
+      "hints": [
+        "Which relation between T and V holds for an adiabatic process?",
+        "What is γ for a monatomic gas?"
+      ],
+      "difficulty": 3,
+      "expectedTimeSec": 120,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

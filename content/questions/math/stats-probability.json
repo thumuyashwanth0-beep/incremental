@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-prob-001",
+      "topicId": "math.stats-probability.probability",
+      "type": "single",
+      "stem": "Two fair dice are thrown. The probability that the sum of the numbers shown is $7$ is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\tfrac16$"
+        },
+        {
+          "key": "B",
+          "text": "$\\tfrac{7}{36}$",
+          "whyWrong": "There are 6 ways to get a sum of 7, not 7."
+        },
+        {
+          "key": "C",
+          "text": "$\\tfrac{1}{12}$",
+          "misconceptionId": "math.stats-probability.probability.unordered-outcomes",
+          "whyWrong": "Only 3 unordered pairs were counted against 36 ordered outcomes."
+        },
+        {
+          "key": "D",
+          "text": "$\\tfrac{5}{36}$",
+          "whyWrong": "That's the probability of a sum of 6 (or 8)."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "A"
+        ]
+      },
+      "solution": "**Key idea:** 36 equally likely ordered outcomes.\n\nFavourable: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): 6 outcomes.\n\n$P = 6/36 =$ **$1/6$**",
+      "hints": [
+        "List the favourable ordered pairs."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 45,
+      "skills": [
+        "counting"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

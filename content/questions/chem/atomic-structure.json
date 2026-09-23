@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-qn-001",
+      "topicId": "chem.atomic-structure.quantum",
+      "type": "single",
+      "stem": "The maximum number of electrons that can have the quantum numbers $n = 3$ and $l = 1$ is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2$",
+          "whyWrong": "That is one orbital. $l = 1$ allows three values of $m_l$."
+        },
+        {
+          "key": "B",
+          "text": "$6$"
+        },
+        {
+          "key": "C",
+          "text": "$10$",
+          "whyWrong": "That is a $d$ subshell ($l = 2$)."
+        },
+        {
+          "key": "D",
+          "text": "$18$",
+          "misconceptionId": "chem.atomic-structure.quantum.subshell-vs-shell",
+          "whyWrong": "$2n^2 = 18$ counts the whole third shell, not just $l = 1$."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** $n = 3, l = 1$ is the $3p$ subshell.\n\n$m_l = -1, 0, +1$ → 3 orbitals × 2 electrons = **6**",
+      "hints": [
+        "Which subshell has $l = 1$?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 45,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

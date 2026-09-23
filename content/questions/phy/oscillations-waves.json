@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-shm-001",
+      "topicId": "phy.oscillations-waves.spring-pendulum",
+      "type": "single",
+      "stem": "A block on a spring oscillates with period $T$. If the block is replaced by one of four times the mass (same spring), the new period is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$T/2$",
+          "whyWrong": "A heavier mass oscillates more slowly, so the period increases."
+        },
+        {
+          "key": "B",
+          "text": "$2T$"
+        },
+        {
+          "key": "C",
+          "text": "$4T$",
+          "misconceptionId": "phy.oscillations-waves.spring-pendulum.linear-mass-period",
+          "whyWrong": "The period goes as $\\sqrt{m}$, not $m$."
+        },
+        {
+          "key": "D",
+          "text": "$T$",
+          "whyWrong": "That's true for a simple pendulum, whose period doesn't depend on mass. For a spring it does."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** $T = 2\\pi\\sqrt{m/k}$, so $T \\propto \\sqrt{m}$.\n\n$T' = T\\sqrt{4} =$ **$2T$**",
+      "hints": [
+        "Recall the formula for the period of a spring–mass system."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 45,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

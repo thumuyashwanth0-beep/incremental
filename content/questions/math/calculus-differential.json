@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-lim-001",
+      "topicId": "math.calculus-differential.limits",
+      "type": "numerical",
+      "stem": "Evaluate $\\displaystyle \\lim_{x \\to 0} \\frac{\\sin 3x}{x}$.",
+      "answer": {
+        "kind": "numeric",
+        "value": 3,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** $\\displaystyle\\lim_{t\\to 0}\\frac{\\sin t}{t} = 1$.\n\n$\\dfrac{\\sin 3x}{x} = 3 \\cdot \\dfrac{\\sin 3x}{3x} \\to$ **3**",
+      "hints": [
+        "Multiply and divide by 3."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 40,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

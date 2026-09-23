@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-itf-001",
+      "topicId": "math.trigonometry.inverse",
+      "type": "single",
+      "stem": "The value of $\\sin^{-1}\\!\\left(\\sin \\dfrac{5\\pi}{6}\\right)$ is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\dfrac{5\\pi}{6}$",
+          "misconceptionId": "math.trigonometry.inverse.principal-range",
+          "whyWrong": "$5\\pi/6$ is outside $[-\\pi/2, \\pi/2]$, so $\\sin^{-1}$ can't return it."
+        },
+        {
+          "key": "B",
+          "text": "$\\dfrac{\\pi}{6}$"
+        },
+        {
+          "key": "C",
+          "text": "$-\\dfrac{\\pi}{6}$",
+          "whyWrong": "$\\sin(5\\pi/6)$ is positive, so the answer must be positive."
+        },
+        {
+          "key": "D",
+          "text": "$\\dfrac{\\pi}{3}$",
+          "whyWrong": "$\\sin(\\pi/3) = \\sqrt3/2 \\ne 1/2$."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** the principal range of $\\sin^{-1}$ is $\\left[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right]$.\n\n1. $\\sin\\dfrac{5\\pi}{6} = \\sin\\left(\\pi - \\dfrac{5\\pi}{6}\\right) = \\sin\\dfrac{\\pi}{6} = \\dfrac12$\n2. $\\dfrac{\\pi}{6}$ lies in the principal range → **$\\dfrac{\\pi}{6}$**",
+      "hints": [
+        "Which angle in $[-\\pi/2, \\pi/2]$ has the same sine as $5\\pi/6$?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

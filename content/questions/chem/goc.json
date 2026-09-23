@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-goc-001",
+      "topicId": "chem.goc.intermediates",
+      "type": "single",
+      "stem": "Which of the following carbocations is the most stable?",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\text{CH}_3\\text{CH}_2^+$",
+          "misconceptionId": "chem.goc.intermediates.primary-most-stable",
+          "whyWrong": "Primary: only one alkyl group stabilises it."
+        },
+        {
+          "key": "B",
+          "text": "$(\\text{CH}_3)_2\\text{CH}^+$",
+          "whyWrong": "Secondary is more stable than primary, but less than tertiary."
+        },
+        {
+          "key": "C",
+          "text": "$(\\text{CH}_3)_3\\text{C}^+$"
+        },
+        {
+          "key": "D",
+          "text": "$\\text{CH}_3^+$",
+          "misconceptionId": "chem.goc.intermediates.primary-most-stable",
+          "whyWrong": "Methyl cation has no alkyl groups: the least stable."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "C"
+        ]
+      },
+      "solution": "**Key idea:** more alkyl groups → more hyperconjugation and +I donation.\n\n$(\\text{CH}_3)_3\\text{C}^+$ is tertiary with 9 α-hydrogens for hyperconjugation, so it is **the most stable**.",
+      "hints": [
+        "Count α-hydrogens available for hyperconjugation."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 40,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-gibbs-001",
+      "topicId": "chem.thermodynamics.entropy-gibbs",
+      "type": "single",
+      "stem": "For a reaction with $\\Delta H < 0$ and $\\Delta S < 0$, the reaction is spontaneous",
+      "options": [
+        {
+          "key": "A",
+          "text": "only at low temperatures"
+        },
+        {
+          "key": "B",
+          "text": "only at high temperatures",
+          "whyWrong": "High $T$ makes the positive $-T\\Delta S$ term dominate, so $\\Delta G > 0$."
+        },
+        {
+          "key": "C",
+          "text": "at all temperatures",
+          "misconceptionId": "chem.thermodynamics.entropy-gibbs.exothermic-always-spontaneous",
+          "whyWrong": "True only if $\\Delta S > 0$ as well."
+        },
+        {
+          "key": "D",
+          "text": "at no temperature",
+          "whyWrong": "At low enough $T$ the negative $\\Delta H$ dominates, so $\\Delta G < 0$."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "A"
+        ]
+      },
+      "solution": "**Key idea:** $\\Delta G = \\Delta H - T\\Delta S$.\n\n- $\\Delta H < 0$ favours spontaneity.\n- $\\Delta S < 0$ makes $-T\\Delta S > 0$, and this grows with $T$.\n- So $\\Delta G < 0$ only while $T < \\Delta H / \\Delta S$: **spontaneous at low temperatures**.",
+      "hints": [
+        "Write $\\Delta G = \\Delta H - T\\Delta S$ and check the sign of each term."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

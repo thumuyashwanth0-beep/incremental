@@ -1,0 +1,52 @@
+{
+  "misconceptions": [
+    {
+      "id": "chem.basic-concepts.mole.mass-times-avogadro",
+      "topicId": "chem.basic-concepts.mole",
+      "description": "Multiplies the mass in grams by Avogadro's number instead of the number of moles.",
+      "remediation": "Number of particles = (mass / molar mass) × Nₐ. Always convert grams to moles first."
+    },
+    {
+      "id": "chem.basic-concepts.mole.atoms-vs-molecules",
+      "topicId": "chem.basic-concepts.mole",
+      "description": "Counts atoms when the question asks for molecules (or vice versa).",
+      "remediation": "Underline what is asked: molecules, atoms, or ions. One H₂O molecule has 3 atoms."
+    },
+    {
+      "id": "chem.atomic-structure.quantum.subshell-vs-shell",
+      "topicId": "chem.atomic-structure.quantum",
+      "description": "Counts electrons for a whole shell when a subshell (fixed l) is specified.",
+      "remediation": "n fixes the shell; l fixes the subshell. A subshell holds 2(2l + 1) electrons; a shell holds 2n²."
+    },
+    {
+      "id": "chem.equilibrium.ionic.ignores-water-ionisation",
+      "topicId": "chem.equilibrium.ionic",
+      "description": "Ignores water's own H⁺ for very dilute acids, giving pH > 7 for an acid.",
+      "remediation": "An acid solution can never be basic. When [acid] ≲ 10⁻⁶ M, add water's contribution: solve [H⁺]² − c[H⁺] − Kw = 0."
+    },
+    {
+      "id": "chem.bonding.vsepr.ignores-lone-pairs",
+      "topicId": "chem.bonding.vsepr",
+      "description": "Predicts shape from the number of bonded atoms only, ignoring lone pairs.",
+      "remediation": "Count all electron domains (bond pairs + lone pairs) to get the electron geometry, then name the shape from atom positions only."
+    },
+    {
+      "id": "chem.bonding.vsepr.geometry-vs-shape",
+      "topicId": "chem.bonding.vsepr",
+      "description": "Gives the electron-pair geometry instead of the molecular shape.",
+      "remediation": "Electron geometry includes lone pairs; molecular shape describes atoms only. XeF₄ has octahedral electron geometry but a square-planar shape."
+    },
+    {
+      "id": "chem.goc.intermediates.primary-most-stable",
+      "topicId": "chem.goc.intermediates",
+      "description": "Believes less substituted carbocations are more stable.",
+      "remediation": "Alkyl groups donate electron density (+I effect and hyperconjugation), stabilising the positive charge. Stability: 3° > 2° > 1° > methyl."
+    },
+    {
+      "id": "chem.thermodynamics.entropy-gibbs.exothermic-always-spontaneous",
+      "topicId": "chem.thermodynamics.entropy-gibbs",
+      "description": "Thinks every exothermic reaction is spontaneous at all temperatures.",
+      "remediation": "Spontaneity depends on ΔG = ΔH − TΔS. If ΔS < 0, the −TΔS term is positive and grows with T, so an exothermic reaction can become non-spontaneous at high T."
+    }
+  ]
+}

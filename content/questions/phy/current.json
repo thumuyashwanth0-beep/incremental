@@ -1,0 +1,77 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-circ-001",
+      "topicId": "phy.current.circuits",
+      "type": "single",
+      "stem": "Two $6\\ \\Omega$ resistors are connected in parallel, and this combination is connected in series with a third $6\\ \\Omega$ resistor. The equivalent resistance is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2\\ \\Omega$",
+          "misconceptionId": "phy.current.circuits.series-parallel-order",
+          "whyWrong": "This treats all three resistors as parallel."
+        },
+        {
+          "key": "B",
+          "text": "$4\\ \\Omega$",
+          "misconceptionId": "phy.current.circuits.series-parallel-order",
+          "whyWrong": "This adds two in series first and then puts that in parallel with the third: the wrong grouping."
+        },
+        {
+          "key": "C",
+          "text": "$9\\ \\Omega$"
+        },
+        {
+          "key": "D",
+          "text": "$18\\ \\Omega$",
+          "misconceptionId": "phy.current.circuits.series-parallel-order",
+          "whyWrong": "This treats all three resistors as series."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "C"
+        ]
+      },
+      "solution": "**Key idea:** reduce the parallel pair first.\n\n1. $6 \\parallel 6 = \\dfrac{6 \\times 6}{12} = 3\\ \\Omega$\n2. In series with $6\\ \\Omega$: **$R = 9\\ \\Omega$**",
+      "hints": [
+        "Which two resistors share both end points?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "circuit-reduction"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    },
+    {
+      "externalId": "orig:phy-circ-002",
+      "topicId": "phy.current.circuits",
+      "type": "numerical",
+      "stem": "A cell of EMF $12\\ \\text{V}$ and internal resistance $1\\ \\Omega$ is connected across an external resistor of $5\\ \\Omega$. Find the potential difference across the terminals of the cell, in volts.",
+      "answer": {
+        "kind": "numeric",
+        "value": 10,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** $V = E - Ir$.\n\n1. $I = \\dfrac{E}{R + r} = \\dfrac{12}{6} = 2\\ \\text{A}$\n2. $V = 12 - 2 \\times 1$\n3. **$V = 10\\ \\text{V}$** (check: $IR = 2 \\times 5 = 10\\ \\text{V}$)",
+      "hints": [
+        "Find the current using the total resistance, including the internal resistance."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 75,
+      "skills": [
+        "multi-step"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

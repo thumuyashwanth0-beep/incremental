@@ -1,0 +1,76 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-ph-001",
+      "topicId": "chem.equilibrium.ionic",
+      "type": "numerical",
+      "stem": "Find the pH of a $0.001\\ \\text{M}$ aqueous solution of $\\text{HCl}$ at $25^\\circ\\text{C}$ (assume complete dissociation).",
+      "answer": {
+        "kind": "numeric",
+        "value": 3,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** strong acid → $[\\text{H}^+] = c$.\n\n$\\text{pH} = -\\log(10^{-3}) =$ **3**",
+      "hints": [
+        "HCl is a strong acid."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 40,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    },
+    {
+      "externalId": "orig:chem-ph-002",
+      "topicId": "chem.equilibrium.ionic",
+      "type": "single",
+      "stem": "The pH of a $10^{-8}\\ \\text{M}$ aqueous $\\text{HCl}$ solution at $25^\\circ\\text{C}$ is closest to",
+      "options": [
+        {
+          "key": "A",
+          "text": "$8.00$",
+          "misconceptionId": "chem.equilibrium.ionic.ignores-water-ionisation",
+          "whyWrong": "An acid can't give a basic pH. Water's $\\text{H}^+$ was ignored."
+        },
+        {
+          "key": "B",
+          "text": "$6.98$"
+        },
+        {
+          "key": "C",
+          "text": "$7.00$",
+          "whyWrong": "Adding acid must lower the pH slightly below 7."
+        },
+        {
+          "key": "D",
+          "text": "$6.00$",
+          "whyWrong": "This would need $[\\text{H}^+] = 10^{-6}\\ \\text{M}$, ten times more than is present."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** at this dilution water's own ionisation ($10^{-7}\\ \\text{M}$ of $\\text{H}^+$) dominates, and the solution must still be (slightly) acidic.\n\n1. $[\\text{H}^+] = x$ with $x^2 - 10^{-8}x - 10^{-14} = 0$\n2. $x \\approx 1.05 \\times 10^{-7}\\ \\text{M}$\n3. **$\\text{pH} \\approx 6.98$**",
+      "hints": [
+        "Compare $10^{-8}$ with the $[\\text{H}^+]$ that pure water already has."
+      ],
+      "difficulty": 3,
+      "expectedTimeSec": 120,
+      "skills": [
+        "concept-check",
+        "algebra-heavy"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

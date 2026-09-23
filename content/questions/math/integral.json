@@ -1,0 +1,75 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-int-001",
+      "topicId": "math.integral.definite",
+      "type": "numerical",
+      "stem": "Evaluate $\\displaystyle \\int_0^1 (3x^2 + 2x)\\,dx$.",
+      "answer": {
+        "kind": "numeric",
+        "value": 2,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** integrate term by term.\n\n$\\left[x^3 + x^2\\right]_0^1 = 1 + 1 =$ **2**",
+      "hints": [
+        "The antiderivative of $x^n$ is $\\dfrac{x^{n+1}}{n+1}$."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 45,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    },
+    {
+      "externalId": "orig:math-int-002",
+      "topicId": "math.integral.indefinite",
+      "type": "single",
+      "stem": "$\\displaystyle \\int x e^x\\,dx$ equals",
+      "options": [
+        {
+          "key": "A",
+          "text": "$x e^x + C$",
+          "whyWrong": "Differentiate it: you get $e^x + xe^x$, not $xe^x$. The second part of integration by parts is missing."
+        },
+        {
+          "key": "B",
+          "text": "$e^x(x - 1) + C$"
+        },
+        {
+          "key": "C",
+          "text": "$e^x(x + 1) + C$",
+          "misconceptionId": "math.integral.indefinite.parts-sign",
+          "whyWrong": "The $-\\int v\\,du$ term was added instead of subtracted."
+        },
+        {
+          "key": "D",
+          "text": "$\\tfrac{x^2}{2} e^x + C$",
+          "whyWrong": "$e^x$ was treated as a constant. You can't integrate a product factor by factor."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** integration by parts with $u = x$, $dv = e^x dx$.\n\n$\\int x e^x dx = x e^x - \\int e^x dx = x e^x - e^x + C =$ **$e^x(x - 1) + C$**\n\nCheck by differentiating: $e^x(x-1) + e^x = xe^x$ ✓",
+      "hints": [
+        "Choose $u = x$ (it becomes simpler when differentiated)."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "multi-step"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-mole-001",
+      "topicId": "chem.basic-concepts.mole",
+      "type": "single",
+      "stem": "The number of water molecules in $9\\ \\text{g}$ of water is ($N_A = 6.022 \\times 10^{23}\\ \\text{mol}^{-1}$)",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6.022 \\times 10^{23}$",
+          "whyWrong": "This is one mole. 9 g of water is only half a mole."
+        },
+        {
+          "key": "B",
+          "text": "$3.011 \\times 10^{23}$"
+        },
+        {
+          "key": "C",
+          "text": "$5.42 \\times 10^{24}$",
+          "misconceptionId": "chem.basic-concepts.mole.mass-times-avogadro",
+          "whyWrong": "The mass (9) was multiplied by $N_A$ without converting to moles."
+        },
+        {
+          "key": "D",
+          "text": "$9.03 \\times 10^{23}$",
+          "misconceptionId": "chem.basic-concepts.mole.atoms-vs-molecules",
+          "whyWrong": "This is the number of *atoms* (3 per molecule)."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** moles first, then multiply by $N_A$.\n\n1. $n = 9/18 = 0.5\\ \\text{mol}$\n2. $N = 0.5 \\times 6.022 \\times 10^{23} =$ **$3.011 \\times 10^{23}$**",
+      "hints": [
+        "Molar mass of water is 18 g/mol."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 45,
+      "skills": [
+        "unit-conversion"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

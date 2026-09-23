@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-ap-001",
+      "topicId": "math.sequences.ap-gp",
+      "type": "single",
+      "stem": "The sum of the first 20 terms of the arithmetic progression $3, 7, 11, \\ldots$ is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$79$",
+          "whyWrong": "That is the 20th *term*, not the sum."
+        },
+        {
+          "key": "B",
+          "text": "$820$"
+        },
+        {
+          "key": "C",
+          "text": "$860$",
+          "misconceptionId": "math.sequences.ap-gp.nd-instead-of-n-minus-1-d",
+          "whyWrong": "Used $nd = 80$ instead of $(n-1)d = 76$."
+        },
+        {
+          "key": "D",
+          "text": "$1640$",
+          "whyWrong": "Forgot the factor $\\tfrac{n}{2}$ (used $n$ instead)."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** $S_n = \\dfrac{n}{2}\\left[2a + (n-1)d\\right]$.\n\n$S_{20} = 10\\,[6 + 19 \\times 4] = 10 \\times 82 =$ **820**",
+      "hints": [
+        "Identify $a$ and $d$ first."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 60,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

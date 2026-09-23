@@ -1,0 +1,52 @@
+{
+  "misconceptions": [
+    {
+      "id": "math.sequences.ap-gp.nd-instead-of-n-minus-1-d",
+      "topicId": "math.sequences.ap-gp",
+      "description": "Uses nd instead of (n − 1)d in AP formulas.",
+      "remediation": "The first term already counts as term 1, so the nth term is a + (n − 1)d. Check with n = 1: you must get a."
+    },
+    {
+      "id": "math.complex-quadratic.quadratics.square-of-sum",
+      "topicId": "math.complex-quadratic.quadratics",
+      "description": "Assumes (α + β)² = α² + β².",
+      "remediation": "(α + β)² = α² + β² + 2αβ. So α² + β² = (α + β)² − 2αβ. Expand the square fully every time."
+    },
+    {
+      "id": "math.integral.indefinite.parts-sign",
+      "topicId": "math.integral.indefinite",
+      "description": "Makes a sign error in integration by parts.",
+      "remediation": "∫u dv = uv − ∫v du. Write the minus sign before the second integral as the very first thing, then evaluate it."
+    },
+    {
+      "id": "math.pnc.permutations-combinations.ignores-repetition",
+      "topicId": "math.pnc.permutations-combinations",
+      "description": "Counts arrangements of repeated letters as if all letters were distinct.",
+      "remediation": "With repeated items, divide by the factorial of each repeat count: n!/(p! q! …). List a tiny case (e.g. 'AAB') to convince yourself."
+    },
+    {
+      "id": "math.coordinate.circles.centre-sign",
+      "topicId": "math.coordinate.circles",
+      "description": "Reads the centre of x² + y² + 2gx + 2fy + c = 0 as (g, f) instead of (−g, −f).",
+      "remediation": "Complete the squares: (x + g)² + (y + f)² = g² + f² − c. The centre is where each bracket is zero, i.e. (−g, −f)."
+    },
+    {
+      "id": "math.matrices.determinants.scalar-det",
+      "topicId": "math.matrices.determinants",
+      "description": "Uses |kA| = k|A| for an n×n matrix.",
+      "remediation": "Multiplying the matrix by k multiplies *every row* by k, so |kA| = kⁿ|A| for an n×n matrix."
+    },
+    {
+      "id": "math.stats-probability.probability.unordered-outcomes",
+      "topicId": "math.stats-probability.probability",
+      "description": "Counts unordered outcomes when the sample space is ordered.",
+      "remediation": "Two dice are distinguishable, so (1,6) and (6,1) are different outcomes out of 36. Keep numerator and denominator in the same (ordered) space."
+    },
+    {
+      "id": "math.trigonometry.inverse.principal-range",
+      "topicId": "math.trigonometry.inverse",
+      "description": "Cancels sin⁻¹(sin x) = x without checking the principal range.",
+      "remediation": "sin⁻¹ always returns a value in [−π/2, π/2]. First rewrite the angle inside as an equivalent one in that range with the same sine."
+    }
+  ]
+}

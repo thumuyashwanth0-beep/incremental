@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: jee
+      POSTGRES_PASSWORD: jee_dev_password
+      POSTGRES_DB: jee
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jee"]
+      interval: 5s
+      retries: 10
+volumes:
+  pgdata:

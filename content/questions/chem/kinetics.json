@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-kin-001",
+      "topicId": "chem.kinetics.integrated",
+      "type": "numerical",
+      "stem": "A first-order reaction has a half-life of $10\\ \\text{min}$. Find the time, in minutes, needed for $75\\%$ of the reactant to be consumed.",
+      "answer": {
+        "kind": "numeric",
+        "value": 20,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** for first order, each half-life halves what remains.\n\n1. 100% → 50% after 1 half-life\n2. 50% → 25% remaining (75% consumed) after 2 half-lives\n3. **$t = 20\\ \\text{min}$**",
+      "hints": [
+        "75% consumed means 25% remains. How many halvings is that?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-quad-001",
+      "topicId": "math.complex-quadratic.quadratics",
+      "type": "single",
+      "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2 - 5x + 6 = 0$, then $\\alpha^2 + \\beta^2$ equals",
+      "options": [
+        {
+          "key": "A",
+          "text": "$13$"
+        },
+        {
+          "key": "B",
+          "text": "$25$",
+          "misconceptionId": "math.complex-quadratic.quadratics.square-of-sum",
+          "whyWrong": "This is $(\\alpha+\\beta)^2$. The $-2\\alpha\\beta$ term is missing."
+        },
+        {
+          "key": "C",
+          "text": "$37$",
+          "whyWrong": "Added $2\\alpha\\beta$ instead of subtracting it."
+        },
+        {
+          "key": "D",
+          "text": "$1$",
+          "whyWrong": "That is $(\\alpha - \\beta)^2$."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "A"
+        ]
+      },
+      "solution": "**Key idea:** $\\alpha^2 + \\beta^2 = (\\alpha+\\beta)^2 - 2\\alpha\\beta$.\n\n1. $\\alpha + \\beta = 5$, $\\alpha\\beta = 6$\n2. $25 - 12 =$ **13** (check: roots 2 and 3, and $4 + 9 = 13$)",
+      "hints": [
+        "Use sum and product of roots."
+      ],
+      "difficulty": 1,
+      "expectedTimeSec": 45,
+      "skills": [
+        "algebra-heavy"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-proj-001",
+      "topicId": "phy.kinematics.projectile",
+      "type": "single",
+      "stem": "A ball is projected from level ground with speed $20\\ \\text{m s}^{-1}$ at $30^\\circ$ above the horizontal. Taking $g = 10\\ \\text{m s}^{-2}$, the maximum height reached is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$5\\ \\text{m}$"
+        },
+        {
+          "key": "B",
+          "text": "$10\\ \\text{m}$",
+          "misconceptionId": "phy.kinematics.projectile.sin-not-squared",
+          "whyWrong": "Comes from $u^2\\sin\\theta/2g$: the sine was not squared."
+        },
+        {
+          "key": "C",
+          "text": "$15\\ \\text{m}$",
+          "misconceptionId": "phy.kinematics.projectile.sin-cos-swap",
+          "whyWrong": "Comes from $u^2\\cos^2\\theta/2g$: cos was used for the vertical component."
+        },
+        {
+          "key": "D",
+          "text": "$20\\ \\text{m}$",
+          "misconceptionId": "phy.kinematics.projectile.ignores-angle",
+          "whyWrong": "Comes from $u^2/2g$: the whole speed was treated as vertical."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "A"
+        ]
+      },
+      "solution": "**Key idea:** only the vertical component $u\\sin\\theta$ decides the height.\n\n1. $u_y = 20 \\sin 30^\\circ = 10\\ \\text{m s}^{-1}$\n2. At the top $v_y = 0$, so $H = \\dfrac{u_y^2}{2g} = \\dfrac{100}{20}$\n3. **$H = 5\\ \\text{m}$**",
+      "hints": [
+        "Which component of the velocity decides how high the ball goes?",
+        "At the highest point the vertical velocity is zero. Use $v^2 = u^2 - 2gh$ vertically."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 75,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    },
+    {
+      "externalId": "orig:phy-proj-002",
+      "topicId": "phy.kinematics.projectile",
+      "type": "numerical",
+      "stem": "A stone is thrown from level ground with speed $20\\ \\text{m s}^{-1}$ at an angle of $15^\\circ$ to the horizontal. Taking $g = 10\\ \\text{m s}^{-2}$, find its horizontal range in metres.",
+      "answer": {
+        "kind": "numeric",
+        "value": 20,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** $R = \\dfrac{u^2 \\sin 2\\theta}{g}$ for level ground.\n\n1. $\\sin 2\\theta = \\sin 30^\\circ = \\tfrac12$\n2. $R = \\dfrac{400 \\times 0.5}{10}$\n3. **$R = 20\\ \\text{m}$**",
+      "hints": [
+        "Range depends on $\\sin 2\\theta$, not $\\sin\\theta$."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 90,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    },
+    {
+      "externalId": "orig:phy-proj-003",
+      "topicId": "phy.kinematics.projectile",
+      "type": "single",
+      "stem": "A particle is projected with speed $30\\ \\text{m s}^{-1}$ at $30^\\circ$ above the horizontal from level ground ($g = 10\\ \\text{m s}^{-2}$). Its time of flight is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$1.5\\ \\text{s}$",
+          "misconceptionId": "phy.kinematics.projectile.half-flight-time",
+          "whyWrong": "This is only the time to the highest point."
+        },
+        {
+          "key": "B",
+          "text": "$3\\ \\text{s}$"
+        },
+        {
+          "key": "C",
+          "text": "$5.2\\ \\text{s}$",
+          "misconceptionId": "phy.kinematics.projectile.sin-cos-swap",
+          "whyWrong": "Comes from $2u\\cos\\theta/g$: cos was used for the vertical component."
+        },
+        {
+          "key": "D",
+          "text": "$6\\ \\text{s}$",
+          "misconceptionId": "phy.kinematics.projectile.ignores-angle",
+          "whyWrong": "Comes from $2u/g$: the whole speed was treated as vertical."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** the flight is symmetric, so total time = 2 × time to reach the top.\n\n1. $u_y = 30 \\sin 30^\\circ = 15\\ \\text{m s}^{-1}$\n2. Time to top $= u_y/g = 1.5\\ \\text{s}$\n3. **$T = 3\\ \\text{s}$**",
+      "hints": [
+        "Find the vertical component of velocity first."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 75,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

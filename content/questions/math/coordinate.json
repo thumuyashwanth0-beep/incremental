@@ -1,0 +1,75 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-circle-001",
+      "topicId": "math.coordinate.circles",
+      "type": "single",
+      "stem": "The centre and radius of the circle $x^2 + y^2 - 4x + 6y - 3 = 0$ are",
+      "options": [
+        {
+          "key": "A",
+          "text": "$(-2, 3),\\ 4$",
+          "misconceptionId": "math.coordinate.circles.centre-sign",
+          "whyWrong": "The signs of the centre coordinates are flipped."
+        },
+        {
+          "key": "B",
+          "text": "$(2, -3),\\ 4$"
+        },
+        {
+          "key": "C",
+          "text": "$(2, -3),\\ \\sqrt{10}$",
+          "whyWrong": "Sign error on the constant: $r^2 = g^2 + f^2 - c = 4 + 9 + 3$."
+        },
+        {
+          "key": "D",
+          "text": "$(4, -6),\\ 4$",
+          "whyWrong": "The coefficients of $x$ and $y$ are $2g$ and $2f$, so halve them."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** complete the squares.\n\n$(x-2)^2 + (y+3)^2 = 3 + 4 + 9 = 16$\n\n**Centre $(2, -3)$, radius $4$**",
+      "hints": [
+        "Complete the square in $x$ and in $y$ separately."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "algebra-heavy"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    },
+    {
+      "externalId": "orig:math-parabola-001",
+      "topicId": "math.coordinate.parabola",
+      "type": "numerical",
+      "stem": "Find the focal distance of the point $(2, 4)$ on the parabola $y^2 = 8x$.",
+      "answer": {
+        "kind": "numeric",
+        "value": 4,
+        "tolerance": 0
+      },
+      "solution": "**Key idea:** focal distance $= x + a$ for $y^2 = 4ax$ (distance to the directrix).\n\n1. $4a = 8 \\Rightarrow a = 2$\n2. Focal distance $= 2 + 2 =$ **4**",
+      "hints": [
+        "Any point on a parabola is equidistant from the focus and the directrix."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

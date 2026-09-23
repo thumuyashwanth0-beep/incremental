@@ -1,0 +1,88 @@
+{
+  "misconceptions": [
+    {
+      "id": "phy.kinematics.projectile.sin-not-squared",
+      "topicId": "phy.kinematics.projectile",
+      "description": "Uses sin θ instead of sin²θ in the maximum-height formula.",
+      "remediation": "Maximum height comes from the vertical component only: H = (u sin θ)²/2g. The whole vertical velocity is squared, so the sine is squared too. Check: the answer's units and the θ = 90° limit (H = u²/2g)."
+    },
+    {
+      "id": "phy.kinematics.projectile.ignores-angle",
+      "topicId": "phy.kinematics.projectile",
+      "description": "Treats the full launch speed as if it were vertical.",
+      "remediation": "Resolve the velocity first: u_y = u sin θ, u_x = u cos θ. Only u_y fights gravity. Draw the velocity components before writing any formula."
+    },
+    {
+      "id": "phy.kinematics.projectile.sin-cos-swap",
+      "topicId": "phy.kinematics.projectile",
+      "description": "Swaps sin and cos when resolving the launch velocity.",
+      "remediation": "For an angle measured from the horizontal, the vertical component is u sin θ. Sanity check: at θ = 0 the vertical component must be 0, and cos 0 = 1 fails that test."
+    },
+    {
+      "id": "phy.kinematics.projectile.half-flight-time",
+      "topicId": "phy.kinematics.projectile",
+      "description": "Confuses time to reach maximum height with total time of flight.",
+      "remediation": "u sin θ / g is only the time to the top. On level ground the flight is symmetric, so total time T = 2u sin θ / g."
+    },
+    {
+      "id": "phy.nlm.friction.static-always-max",
+      "topicId": "phy.nlm.friction",
+      "description": "Believes static friction always equals μₛN.",
+      "remediation": "μₛN is only the *maximum* static friction. Static friction adjusts to exactly cancel the applied force until that limit is reached. First compare the applied force with μₛN."
+    },
+    {
+      "id": "phy.nlm.friction.kinetic-when-at-rest",
+      "topicId": "phy.nlm.friction",
+      "description": "Uses kinetic friction for a body that is not sliding.",
+      "remediation": "Kinetic friction μₖN acts only when surfaces slide over each other. Decide first: does the body move? If the applied force is below μₛN, it doesn't, and friction is static."
+    },
+    {
+      "id": "phy.electrostatics.coulomb-field.inverse-not-square",
+      "topicId": "phy.electrostatics.coulomb-field",
+      "description": "Treats Coulomb force as inversely proportional to r instead of r².",
+      "remediation": "F ∝ q₁q₂/r². Halving r multiplies F by 4, not 2. Write the ratio F'/F with every changed factor before simplifying."
+    },
+    {
+      "id": "phy.electrostatics.coulomb-field.missed-a-change",
+      "topicId": "phy.electrostatics.coulomb-field",
+      "description": "Accounts for only one of several simultaneous changes.",
+      "remediation": "When several quantities change, write F'/F = (q₁'/q₁)(q₂'/q₂)(r/r')² and fill in every factor explicitly."
+    },
+    {
+      "id": "phy.current.circuits.series-parallel-order",
+      "topicId": "phy.current.circuits",
+      "description": "Combines resistors in the wrong order (parallel before series or vice versa).",
+      "remediation": "Redraw the circuit and find the innermost group first: resistors sharing *both* end nodes are in parallel; resistors carrying the *same current* with no junction between them are in series."
+    },
+    {
+      "id": "phy.current.circuits.ignores-internal-resistance",
+      "topicId": "phy.current.circuits",
+      "description": "Takes terminal voltage equal to EMF when current flows.",
+      "remediation": "When a current I flows, the terminal voltage is V = E − Ir. It equals E only on open circuit."
+    },
+    {
+      "id": "phy.dual-nature.photoelectric.forgets-work-function",
+      "topicId": "phy.dual-nature.photoelectric",
+      "description": "Equates the photon energy with the photoelectron's kinetic energy.",
+      "remediation": "Part of the photon's energy (the work function φ) is spent freeing the electron: KEmax = hν − φ. Always subtract φ."
+    },
+    {
+      "id": "phy.oscillations-waves.spring-pendulum.linear-mass-period",
+      "topicId": "phy.oscillations-waves.spring-pendulum",
+      "description": "Thinks the period of a spring–mass system is proportional to the mass.",
+      "remediation": "T = 2π√(m/k): the period goes as the *square root* of mass. Four times the mass gives twice the period."
+    },
+    {
+      "id": "phy.thermodynamics.processes.adiabatic-as-isothermal",
+      "topicId": "phy.thermodynamics.processes",
+      "description": "Treats an adiabatic process as isothermal (temperature unchanged).",
+      "remediation": "In an adiabatic process no heat enters, so work done on the gas raises its temperature: TV^(γ−1) = constant. Isothermal means T is constant, which needs heat exchange."
+    },
+    {
+      "id": "phy.units.si-dimensions.energy-vs-action",
+      "topicId": "phy.units.si-dimensions",
+      "description": "Confuses the dimensions of energy with those of Planck's constant.",
+      "remediation": "Derive dimensions from a defining equation: E = hν, so [h] = [E]/[ν] = [ML²T⁻²]/[T⁻¹] = [ML²T⁻¹]."
+    }
+  ]
+}

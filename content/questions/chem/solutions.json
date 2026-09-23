@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-coll-001",
+      "topicId": "chem.solutions.colligative",
+      "type": "numerical",
+      "stem": "Find the depression in freezing point (in K) of a $0.1\\ \\text{molal}$ aqueous solution of $\\text{NaCl}$, assuming complete dissociation. ($K_f$ of water $= 1.86\\ \\text{K kg mol}^{-1}$). Give your answer to three decimal places.",
+      "answer": {
+        "kind": "numeric",
+        "value": 0.372,
+        "tolerance": 0.002
+      },
+      "solution": "**Key idea:** $\\Delta T_f = i K_f m$, and NaCl gives 2 ions ($i = 2$).\n\n$\\Delta T_f = 2 \\times 1.86 \\times 0.1 =$ **$0.372\\ \\text{K}$**",
+      "hints": [
+        "What is the van't Hoff factor for NaCl?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 75,
+      "skills": [
+        "formula-recall"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

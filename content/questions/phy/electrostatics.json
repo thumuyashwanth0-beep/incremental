@@ -1,0 +1,53 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-elec-001",
+      "topicId": "phy.electrostatics.coulomb-field",
+      "type": "single",
+      "stem": "Two point charges separated by distance $r$ repel each other with force $F$. If one charge is doubled and the separation is halved, the new force is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$2F$",
+          "misconceptionId": "phy.electrostatics.coulomb-field.missed-a-change",
+          "whyWrong": "Only the doubled charge was counted. The halved distance was ignored."
+        },
+        {
+          "key": "B",
+          "text": "$4F$",
+          "misconceptionId": "phy.electrostatics.coulomb-field.missed-a-change",
+          "whyWrong": "Only the halved distance was counted. The doubled charge was ignored."
+        },
+        {
+          "key": "C",
+          "text": "$8F$"
+        },
+        {
+          "key": "D",
+          "text": "$F$",
+          "misconceptionId": "phy.electrostatics.coulomb-field.inverse-not-square",
+          "whyWrong": "Treated the force as $\\propto 1/r$, so halving $r$ only doubled $F$ and seemed to cancel."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "C"
+        ]
+      },
+      "solution": "**Key idea:** $F \\propto \\dfrac{q_1 q_2}{r^2}$, so write the ratio.\n\n$\\dfrac{F'}{F} = 2 \\times \\left(\\dfrac{r}{r/2}\\right)^2 = 2 \\times 4 = 8$\n\n**$F' = 8F$**",
+      "hints": [
+        "Write $F'/F$ as a product of ratios."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "proportional-reasoning"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

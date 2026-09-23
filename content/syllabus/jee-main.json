@@ -1,0 +1,316 @@
+{
+  "exam": "JEE Main",
+  "syllabusVersion": "2026",
+  "source": "NTA JEE Main Information Bulletin syllabus (revised 2024, unchanged for 2025/2026). Unit list is official; topic split is ours.",
+  "weightNote": "unit.weight = estimated questions per 25-question subject section, averaged over 2023-2025 shifts. These are estimates from public paper analyses, not NTA data. Re-derive yearly with /content-coverage.",
+  "subjects": [
+    {
+      "id": "phy",
+      "name": "Physics",
+      "units": [
+        { "id": "phy.units", "name": "Units and Measurements", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.units.si-dimensions", "name": "SI units, dimensions and dimensional analysis" },
+          { "id": "phy.units.errors", "name": "Errors in measurement, significant figures" },
+          { "id": "phy.units.instruments", "name": "Least count, vernier callipers, screw gauge" }
+        ]},
+        { "id": "phy.kinematics", "name": "Kinematics", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.kinematics.1d", "name": "Motion in a straight line, graphs" },
+          { "id": "phy.kinematics.vectors", "name": "Scalars, vectors, relative velocity" },
+          { "id": "phy.kinematics.projectile", "name": "Projectile motion" },
+          { "id": "phy.kinematics.circular", "name": "Uniform circular motion" }
+        ]},
+        { "id": "phy.nlm", "name": "Laws of Motion", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.nlm.newton-laws", "name": "Newton's laws, free-body diagrams, constraints" },
+          { "id": "phy.nlm.friction", "name": "Static and kinetic friction" },
+          { "id": "phy.nlm.circular-dynamics", "name": "Dynamics of circular motion, banking" },
+          { "id": "phy.nlm.momentum-impulse", "name": "Momentum conservation, impulse" }
+        ]},
+        { "id": "phy.wep", "name": "Work, Energy and Power", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.wep.work-energy-theorem", "name": "Work done by forces, work-energy theorem" },
+          { "id": "phy.wep.potential-energy", "name": "Potential energy, conservative forces, spring" },
+          { "id": "phy.wep.power", "name": "Power" },
+          { "id": "phy.wep.collisions", "name": "Elastic and inelastic collisions" },
+          { "id": "phy.wep.vertical-circle", "name": "Motion in a vertical circle" }
+        ]},
+        { "id": "phy.rotation", "name": "Rotational Motion", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.rotation.com", "name": "Centre of mass" },
+          { "id": "phy.rotation.moi", "name": "Moment of inertia, parallel and perpendicular axes" },
+          { "id": "phy.rotation.torque", "name": "Torque, rotational dynamics, equilibrium" },
+          { "id": "phy.rotation.angular-momentum", "name": "Angular momentum and its conservation" },
+          { "id": "phy.rotation.rolling", "name": "Rolling motion" }
+        ]},
+        { "id": "phy.gravitation", "name": "Gravitation", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.gravitation.law-g", "name": "Universal law, variation of g" },
+          { "id": "phy.gravitation.potential", "name": "Gravitational potential and potential energy" },
+          { "id": "phy.gravitation.satellites", "name": "Escape velocity, orbital motion, Kepler's laws" }
+        ]},
+        { "id": "phy.solids-liquids", "name": "Properties of Solids and Liquids", "class": 11, "weight": 1.5, "topics": [
+          { "id": "phy.solids-liquids.elasticity", "name": "Elasticity, stress-strain, moduli" },
+          { "id": "phy.solids-liquids.fluid-statics", "name": "Pressure, Pascal's law, buoyancy" },
+          { "id": "phy.solids-liquids.fluid-dynamics", "name": "Bernoulli, viscosity, Stokes' law, terminal velocity" },
+          { "id": "phy.solids-liquids.surface-tension", "name": "Surface tension, capillarity" },
+          { "id": "phy.solids-liquids.thermal", "name": "Thermal expansion, calorimetry, latent heat" },
+          { "id": "phy.solids-liquids.heat-transfer", "name": "Conduction, convection, radiation, Newton's cooling" }
+        ]},
+        { "id": "phy.thermodynamics", "name": "Thermodynamics", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.thermodynamics.first-law", "name": "Zeroth and first law, work in processes" },
+          { "id": "phy.thermodynamics.processes", "name": "Isothermal, adiabatic, isobaric, isochoric processes" },
+          { "id": "phy.thermodynamics.second-law", "name": "Second law, heat engines, refrigerators" }
+        ]},
+        { "id": "phy.ktg", "name": "Kinetic Theory of Gases", "class": 11, "weight": 1, "topics": [
+          { "id": "phy.ktg.ideal-gas", "name": "Ideal gas equation, kinetic interpretation of temperature" },
+          { "id": "phy.ktg.speeds", "name": "RMS speed, mean free path" },
+          { "id": "phy.ktg.equipartition", "name": "Degrees of freedom, equipartition, specific heats" }
+        ]},
+        { "id": "phy.oscillations-waves", "name": "Oscillations and Waves", "class": 11, "weight": 1.5, "topics": [
+          { "id": "phy.oscillations-waves.shm", "name": "SHM kinematics and energy" },
+          { "id": "phy.oscillations-waves.spring-pendulum", "name": "Spring-mass system, simple pendulum" },
+          { "id": "phy.oscillations-waves.wave-motion", "name": "Wave motion, speed of waves" },
+          { "id": "phy.oscillations-waves.superposition", "name": "Superposition, standing waves, strings and pipes" },
+          { "id": "phy.oscillations-waves.beats-doppler", "name": "Beats, Doppler effect" }
+        ]},
+        { "id": "phy.electrostatics", "name": "Electrostatics", "class": 12, "weight": 2, "topics": [
+          { "id": "phy.electrostatics.coulomb-field", "name": "Coulomb's law, electric field, field lines" },
+          { "id": "phy.electrostatics.gauss", "name": "Electric flux, Gauss's law and applications" },
+          { "id": "phy.electrostatics.potential", "name": "Electric potential, equipotentials, dipoles" },
+          { "id": "phy.electrostatics.conductors", "name": "Conductors, dielectrics, polarisation" },
+          { "id": "phy.electrostatics.capacitors", "name": "Capacitors, combinations, energy stored" }
+        ]},
+        { "id": "phy.current", "name": "Current Electricity", "class": 12, "weight": 2, "topics": [
+          { "id": "phy.current.ohm-drift", "name": "Drift velocity, Ohm's law, resistivity" },
+          { "id": "phy.current.circuits", "name": "Series/parallel, EMF, internal resistance" },
+          { "id": "phy.current.kirchhoff", "name": "Kirchhoff's laws, Wheatstone bridge" },
+          { "id": "phy.current.instruments", "name": "Metre bridge, potentiometer" },
+          { "id": "phy.current.power", "name": "Electrical energy and power" }
+        ]},
+        { "id": "phy.magnetism", "name": "Magnetic Effects of Current and Magnetism", "class": 12, "weight": 2, "topics": [
+          { "id": "phy.magnetism.biot-savart", "name": "Biot-Savart law, field of loop and wire" },
+          { "id": "phy.magnetism.ampere", "name": "Ampere's law, solenoid, toroid" },
+          { "id": "phy.magnetism.lorentz", "name": "Force on moving charges, cyclotron" },
+          { "id": "phy.magnetism.force-torque-conductors", "name": "Force and torque on current-carrying conductors" },
+          { "id": "phy.magnetism.galvanometer", "name": "Moving coil galvanometer, conversion to ammeter/voltmeter" },
+          { "id": "phy.magnetism.materials", "name": "Magnetic dipole, para/dia/ferromagnetism" }
+        ]},
+        { "id": "phy.emi-ac", "name": "Electromagnetic Induction and Alternating Currents", "class": 12, "weight": 1.5, "topics": [
+          { "id": "phy.emi-ac.faraday-lenz", "name": "Faraday's and Lenz's laws, motional EMF, eddy currents" },
+          { "id": "phy.emi-ac.inductance", "name": "Self and mutual inductance" },
+          { "id": "phy.emi-ac.ac-circuits", "name": "AC, reactance, impedance, LCR resonance, power factor" },
+          { "id": "phy.emi-ac.transformer", "name": "AC generator and transformer" }
+        ]},
+        { "id": "phy.em-waves", "name": "Electromagnetic Waves", "class": 12, "weight": 1, "topics": [
+          { "id": "phy.em-waves.displacement-current", "name": "Displacement current, characteristics of EM waves" },
+          { "id": "phy.em-waves.spectrum", "name": "Electromagnetic spectrum and uses" }
+        ]},
+        { "id": "phy.optics", "name": "Optics", "class": 12, "weight": 2, "topics": [
+          { "id": "phy.optics.reflection-mirrors", "name": "Reflection, spherical mirrors" },
+          { "id": "phy.optics.refraction-lenses", "name": "Refraction, TIR, lenses, lens maker's formula" },
+          { "id": "phy.optics.prism", "name": "Prism, dispersion" },
+          { "id": "phy.optics.instruments", "name": "Microscope, telescope, resolving power" },
+          { "id": "phy.optics.wave-optics", "name": "Huygens principle, YDSE, interference" },
+          { "id": "phy.optics.diffraction-polarisation", "name": "Single-slit diffraction, polarisation, Brewster's law" }
+        ]},
+        { "id": "phy.dual-nature", "name": "Dual Nature of Matter and Radiation", "class": 12, "weight": 1, "topics": [
+          { "id": "phy.dual-nature.photoelectric", "name": "Photoelectric effect, Einstein's equation" },
+          { "id": "phy.dual-nature.de-broglie", "name": "de Broglie wavelength, matter waves" }
+        ]},
+        { "id": "phy.atoms-nuclei", "name": "Atoms and Nuclei", "class": 12, "weight": 1.5, "topics": [
+          { "id": "phy.atoms-nuclei.bohr", "name": "Rutherford model, Bohr model, hydrogen spectrum" },
+          { "id": "phy.atoms-nuclei.nucleus", "name": "Nuclear size, mass defect, binding energy" },
+          { "id": "phy.atoms-nuclei.fission-fusion", "name": "Nuclear fission and fusion" }
+        ]},
+        { "id": "phy.electronics", "name": "Electronic Devices", "class": 12, "weight": 1, "topics": [
+          { "id": "phy.electronics.semiconductors", "name": "Semiconductors, p-n junction, diode characteristics" },
+          { "id": "phy.electronics.diode-applications", "name": "Rectifiers, LED, photodiode, solar cell, Zener" },
+          { "id": "phy.electronics.logic-gates", "name": "Logic gates" }
+        ]},
+        { "id": "phy.experimental", "name": "Experimental Skills", "class": 12, "weight": 0.5, "topics": [
+          { "id": "phy.experimental.mechanics-labs", "name": "Vernier, screw gauge, pendulum, Young's modulus, viscosity, surface tension experiments" },
+          { "id": "phy.experimental.electricity-optics-labs", "name": "Metre bridge, Ohm's law, galvanometer, focal length, prism, diode experiments" }
+        ]}
+      ]
+    },
+    {
+      "id": "chem",
+      "name": "Chemistry",
+      "units": [
+        { "id": "chem.basic-concepts", "name": "Some Basic Concepts in Chemistry", "class": 11, "weight": 1, "topics": [
+          { "id": "chem.basic-concepts.mole", "name": "Mole concept, molar mass" },
+          { "id": "chem.basic-concepts.stoichiometry", "name": "Stoichiometry, limiting reagent" },
+          { "id": "chem.basic-concepts.concentration", "name": "Concentration terms, empirical and molecular formula" }
+        ]},
+        { "id": "chem.atomic-structure", "name": "Atomic Structure", "class": 11, "weight": 1, "topics": [
+          { "id": "chem.atomic-structure.bohr-spectra", "name": "Bohr model, hydrogen spectrum" },
+          { "id": "chem.atomic-structure.quantum", "name": "Dual nature, uncertainty principle, quantum numbers" },
+          { "id": "chem.atomic-structure.configuration", "name": "Orbitals, Aufbau, Pauli, Hund, electronic configuration" }
+        ]},
+        { "id": "chem.bonding", "name": "Chemical Bonding and Molecular Structure", "class": 11, "weight": 1.5, "topics": [
+          { "id": "chem.bonding.ionic-covalent", "name": "Ionic and covalent bonds, Fajans' rules, lattice energy" },
+          { "id": "chem.bonding.vsepr", "name": "VSEPR, shapes of molecules" },
+          { "id": "chem.bonding.hybridisation", "name": "Valence bond theory, hybridisation, resonance" },
+          { "id": "chem.bonding.mot", "name": "Molecular orbital theory, bond order, magnetism" },
+          { "id": "chem.bonding.hydrogen-bond", "name": "Dipole moment, hydrogen bonding" }
+        ]},
+        { "id": "chem.thermodynamics", "name": "Chemical Thermodynamics", "class": 11, "weight": 1, "topics": [
+          { "id": "chem.thermodynamics.first-law", "name": "First law, internal energy, enthalpy" },
+          { "id": "chem.thermodynamics.thermochemistry", "name": "Hess's law, enthalpies of reaction" },
+          { "id": "chem.thermodynamics.entropy-gibbs", "name": "Entropy, Gibbs energy, spontaneity" }
+        ]},
+        { "id": "chem.solutions", "name": "Solutions", "class": 12, "weight": 1, "topics": [
+          { "id": "chem.solutions.raoult", "name": "Raoult's law, ideal and non-ideal solutions" },
+          { "id": "chem.solutions.colligative", "name": "Colligative properties, van't Hoff factor" }
+        ]},
+        { "id": "chem.equilibrium", "name": "Equilibrium", "class": 11, "weight": 1, "topics": [
+          { "id": "chem.equilibrium.chemical", "name": "Kp, Kc, Le Chatelier's principle" },
+          { "id": "chem.equilibrium.ionic", "name": "Acids and bases, pH, ionisation constants" },
+          { "id": "chem.equilibrium.buffer-solubility", "name": "Hydrolysis, buffers, solubility product, common ion effect" }
+        ]},
+        { "id": "chem.redox-electro", "name": "Redox Reactions and Electrochemistry", "class": 12, "weight": 1.5, "topics": [
+          { "id": "chem.redox-electro.redox", "name": "Oxidation number, balancing redox reactions" },
+          { "id": "chem.redox-electro.conductance", "name": "Conductance, Kohlrausch's law" },
+          { "id": "chem.redox-electro.cells", "name": "Galvanic cells, Nernst equation, EMF and Gibbs energy" },
+          { "id": "chem.redox-electro.electrolysis", "name": "Electrolysis, Faraday's laws, batteries, corrosion" }
+        ]},
+        { "id": "chem.kinetics", "name": "Chemical Kinetics", "class": 12, "weight": 1, "topics": [
+          { "id": "chem.kinetics.rate-law", "name": "Rate law, order, molecularity" },
+          { "id": "chem.kinetics.integrated", "name": "Zero and first order integrated rate equations, half-life" },
+          { "id": "chem.kinetics.arrhenius", "name": "Temperature dependence, Arrhenius equation, collision theory" }
+        ]},
+        { "id": "chem.periodicity", "name": "Classification of Elements and Periodicity", "class": 11, "weight": 1, "topics": [
+          { "id": "chem.periodicity.periodic-table", "name": "Modern periodic law, s/p/d/f blocks" },
+          { "id": "chem.periodicity.trends", "name": "Atomic radius, ionisation enthalpy, electron gain enthalpy, electronegativity" }
+        ]},
+        { "id": "chem.p-block", "name": "p-Block Elements", "class": 12, "weight": 1.5, "topics": [
+          { "id": "chem.p-block.groups-13-14", "name": "Groups 13 and 14 trends and anomalies" },
+          { "id": "chem.p-block.groups-15-16", "name": "Groups 15 and 16" },
+          { "id": "chem.p-block.groups-17-18", "name": "Groups 17 and 18, interhalogens, noble gas compounds" }
+        ]},
+        { "id": "chem.d-f-block", "name": "d- and f-Block Elements", "class": 12, "weight": 1.5, "topics": [
+          { "id": "chem.d-f-block.transition-properties", "name": "Transition elements: configuration, oxidation states, magnetism, colour" },
+          { "id": "chem.d-f-block.compounds", "name": "KMnO4 and K2Cr2O7" },
+          { "id": "chem.d-f-block.lanthanoids-actinoids", "name": "Lanthanoids, actinoids, lanthanoid contraction" }
+        ]},
+        { "id": "chem.coordination", "name": "Coordination Compounds", "class": 12, "weight": 2, "topics": [
+          { "id": "chem.coordination.nomenclature-isomerism", "name": "Werner's theory, nomenclature, isomerism" },
+          { "id": "chem.coordination.vbt", "name": "Valence bond theory, hybridisation, magnetic moment" },
+          { "id": "chem.coordination.cft", "name": "Crystal field theory, colour, applications" }
+        ]},
+        { "id": "chem.purification", "name": "Purification and Characterisation of Organic Compounds", "class": 11, "weight": 0.5, "topics": [
+          { "id": "chem.purification.methods", "name": "Crystallisation, distillation, chromatography" },
+          { "id": "chem.purification.analysis", "name": "Qualitative and quantitative analysis (Dumas, Kjeldahl, Carius)" }
+        ]},
+        { "id": "chem.goc", "name": "Some Basic Principles of Organic Chemistry", "class": 11, "weight": 2, "topics": [
+          { "id": "chem.goc.nomenclature", "name": "IUPAC nomenclature" },
+          { "id": "chem.goc.isomerism", "name": "Structural and stereoisomerism" },
+          { "id": "chem.goc.electronic-effects", "name": "Inductive, resonance, hyperconjugation, electromeric effects" },
+          { "id": "chem.goc.intermediates", "name": "Carbocations, carbanions, free radicals, stability" },
+          { "id": "chem.goc.reaction-types", "name": "Types of reactions: substitution, addition, elimination, rearrangement" }
+        ]},
+        { "id": "chem.hydrocarbons", "name": "Hydrocarbons", "class": 11, "weight": 1, "topics": [
+          { "id": "chem.hydrocarbons.alkanes", "name": "Alkanes, conformations" },
+          { "id": "chem.hydrocarbons.alkenes-alkynes", "name": "Alkenes and alkynes, Markovnikov, ozonolysis" },
+          { "id": "chem.hydrocarbons.aromatic", "name": "Benzene, aromaticity, electrophilic substitution, directive influence" }
+        ]},
+        { "id": "chem.halogen-compounds", "name": "Organic Compounds Containing Halogens", "class": 12, "weight": 1, "topics": [
+          { "id": "chem.halogen-compounds.sn-mechanisms", "name": "SN1 and SN2 mechanisms, elimination" },
+          { "id": "chem.halogen-compounds.properties-uses", "name": "Preparation, properties and uses of haloalkanes/haloarenes" }
+        ]},
+        { "id": "chem.oxygen-compounds", "name": "Organic Compounds Containing Oxygen", "class": 12, "weight": 2, "topics": [
+          { "id": "chem.oxygen-compounds.alcohols-phenols", "name": "Alcohols and phenols" },
+          { "id": "chem.oxygen-compounds.ethers", "name": "Ethers" },
+          { "id": "chem.oxygen-compounds.carbonyls", "name": "Aldehydes and ketones, nucleophilic addition, named reactions" },
+          { "id": "chem.oxygen-compounds.carboxylic-acids", "name": "Carboxylic acids and derivatives, acidity" }
+        ]},
+        { "id": "chem.nitrogen-compounds", "name": "Organic Compounds Containing Nitrogen", "class": 12, "weight": 1, "topics": [
+          { "id": "chem.nitrogen-compounds.amines", "name": "Amines, basicity, identification of amines" },
+          { "id": "chem.nitrogen-compounds.diazonium", "name": "Diazonium salts and their reactions" }
+        ]},
+        { "id": "chem.biomolecules", "name": "Biomolecules", "class": 12, "weight": 1, "topics": [
+          { "id": "chem.biomolecules.carbohydrates", "name": "Carbohydrates" },
+          { "id": "chem.biomolecules.proteins-enzymes", "name": "Amino acids, proteins, enzymes" },
+          { "id": "chem.biomolecules.vitamins-nucleic-acids", "name": "Vitamins, nucleic acids, hormones" }
+        ]},
+        { "id": "chem.practical", "name": "Principles Related to Practical Chemistry", "class": 12, "weight": 1.5, "topics": [
+          { "id": "chem.practical.functional-group-tests", "name": "Detection of functional groups and extra elements" },
+          { "id": "chem.practical.inorganic-salt-analysis", "name": "Cation and anion identification (salt analysis)" },
+          { "id": "chem.practical.titrations-preparations", "name": "Titrimetric exercises, preparation of compounds, lab techniques" }
+        ]}
+      ]
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "units": [
+        { "id": "math.sets-functions", "name": "Sets, Relations and Functions", "class": 11, "weight": 1.5, "topics": [
+          { "id": "math.sets-functions.sets", "name": "Sets, Venn diagrams, set operations" },
+          { "id": "math.sets-functions.relations", "name": "Relations, equivalence relations" },
+          { "id": "math.sets-functions.functions", "name": "Functions: types, domain/range, composition, inverse" }
+        ]},
+        { "id": "math.complex-quadratic", "name": "Complex Numbers and Quadratic Equations", "class": 11, "weight": 2, "topics": [
+          { "id": "math.complex-quadratic.complex-algebra", "name": "Algebra of complex numbers, modulus, argument" },
+          { "id": "math.complex-quadratic.argand", "name": "Argand plane, geometry of complex numbers" },
+          { "id": "math.complex-quadratic.quadratics", "name": "Quadratic equations, nature and relations of roots" }
+        ]},
+        { "id": "math.matrices", "name": "Matrices and Determinants", "class": 12, "weight": 2, "topics": [
+          { "id": "math.matrices.algebra", "name": "Matrix algebra, types of matrices" },
+          { "id": "math.matrices.determinants", "name": "Determinants, properties, area of triangle" },
+          { "id": "math.matrices.inverse-systems", "name": "Adjoint, inverse, solving linear systems" }
+        ]},
+        { "id": "math.pnc", "name": "Permutations and Combinations", "class": 11, "weight": 1, "topics": [
+          { "id": "math.pnc.counting", "name": "Fundamental principle of counting" },
+          { "id": "math.pnc.permutations-combinations", "name": "Permutations and combinations, applications" }
+        ]},
+        { "id": "math.binomial", "name": "Binomial Theorem", "class": 11, "weight": 1, "topics": [
+          { "id": "math.binomial.expansion", "name": "Binomial expansion, general and middle terms" },
+          { "id": "math.binomial.coefficients", "name": "Properties of binomial coefficients, simple applications" }
+        ]},
+        { "id": "math.sequences", "name": "Sequences and Series", "class": 11, "weight": 1.5, "topics": [
+          { "id": "math.sequences.ap-gp", "name": "Arithmetic and geometric progressions" },
+          { "id": "math.sequences.means", "name": "AM, GM and their relation" },
+          { "id": "math.sequences.special-series", "name": "Sums of special series" }
+        ]},
+        { "id": "math.calculus-differential", "name": "Limits, Continuity and Differentiability", "class": 12, "weight": 2, "topics": [
+          { "id": "math.calculus-differential.limits", "name": "Limits" },
+          { "id": "math.calculus-differential.continuity", "name": "Continuity and differentiability" },
+          { "id": "math.calculus-differential.derivatives", "name": "Differentiation techniques" },
+          { "id": "math.calculus-differential.monotonicity-extrema", "name": "Increasing/decreasing functions, maxima and minima" },
+          { "id": "math.calculus-differential.rate-tangents", "name": "Rate of change, tangents and normals" }
+        ]},
+        { "id": "math.integral", "name": "Integral Calculus", "class": 12, "weight": 2.5, "topics": [
+          { "id": "math.integral.indefinite", "name": "Indefinite integration: substitution, parts, partial fractions" },
+          { "id": "math.integral.definite", "name": "Definite integrals and their properties" },
+          { "id": "math.integral.area", "name": "Area under curves" }
+        ]},
+        { "id": "math.diff-equations", "name": "Differential Equations", "class": 12, "weight": 1.5, "topics": [
+          { "id": "math.diff-equations.formation-order", "name": "Order, degree, formation" },
+          { "id": "math.diff-equations.separable-homogeneous", "name": "Variable separable and homogeneous equations" },
+          { "id": "math.diff-equations.linear", "name": "Linear first-order differential equations" }
+        ]},
+        { "id": "math.coordinate", "name": "Coordinate Geometry", "class": 11, "weight": 3.5, "topics": [
+          { "id": "math.coordinate.straight-lines", "name": "Straight lines, distance, section formula, locus" },
+          { "id": "math.coordinate.circles", "name": "Circles" },
+          { "id": "math.coordinate.parabola", "name": "Parabola" },
+          { "id": "math.coordinate.ellipse", "name": "Ellipse" },
+          { "id": "math.coordinate.hyperbola", "name": "Hyperbola" }
+        ]},
+        { "id": "math.3d", "name": "Three Dimensional Geometry", "class": 12, "weight": 2, "topics": [
+          { "id": "math.3d.lines", "name": "Direction cosines/ratios, equation of a line, skew lines, shortest distance" },
+          { "id": "math.3d.planes", "name": "Planes, angle and distance between line and plane" }
+        ]},
+        { "id": "math.vectors", "name": "Vector Algebra", "class": 12, "weight": 1.5, "topics": [
+          { "id": "math.vectors.basics", "name": "Vectors, components, section formula" },
+          { "id": "math.vectors.products", "name": "Scalar, vector and scalar triple products" }
+        ]},
+        { "id": "math.stats-probability", "name": "Statistics and Probability", "class": 12, "weight": 2, "topics": [
+          { "id": "math.stats-probability.statistics", "name": "Mean, median, mode, variance, standard deviation" },
+          { "id": "math.stats-probability.probability", "name": "Probability, conditional probability, Bayes' theorem" },
+          { "id": "math.stats-probability.distributions", "name": "Random variables, binomial distribution" }
+        ]},
+        { "id": "math.trigonometry", "name": "Trigonometry", "class": 11, "weight": 1, "topics": [
+          { "id": "math.trigonometry.identities", "name": "Trigonometric functions and identities" },
+          { "id": "math.trigonometry.equations", "name": "Trigonometric equations" },
+          { "id": "math.trigonometry.inverse", "name": "Inverse trigonometric functions" }
+        ]}
+      ]
+    }
+  ]
+}

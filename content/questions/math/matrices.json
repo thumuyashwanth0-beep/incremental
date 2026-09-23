@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-det-001",
+      "topicId": "math.matrices.determinants",
+      "type": "single",
+      "stem": "If $A$ is a $3 \\times 3$ matrix with $|A| = 2$, then $|3A|$ equals",
+      "options": [
+        {
+          "key": "A",
+          "text": "$6$",
+          "misconceptionId": "math.matrices.determinants.scalar-det",
+          "whyWrong": "Used $|kA| = k|A|$. Each of the 3 rows picks up a factor of 3."
+        },
+        {
+          "key": "B",
+          "text": "$18$",
+          "whyWrong": "Used $k^2$. The matrix is $3 \\times 3$, so the power is 3."
+        },
+        {
+          "key": "C",
+          "text": "$54$"
+        },
+        {
+          "key": "D",
+          "text": "$8$",
+          "whyWrong": "Cubed the determinant instead of the scalar."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "C"
+        ]
+      },
+      "solution": "**Key idea:** $|kA| = k^n |A|$ for an $n \\times n$ matrix.\n\n$|3A| = 3^3 \\times 2 =$ **54**",
+      "hints": [
+        "What happens to a determinant when one row is multiplied by $k$?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 45,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-fric-001",
+      "topicId": "phy.nlm.friction",
+      "type": "single",
+      "stem": "A $5\\ \\text{kg}$ block rests on a rough horizontal floor with $\\mu_s = 0.4$ and $\\mu_k = 0.25$. A horizontal force of $15\\ \\text{N}$ is applied to it. Taking $g = 10\\ \\text{m s}^{-2}$, the friction force acting on the block is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$20\\ \\text{N}$",
+          "misconceptionId": "phy.nlm.friction.static-always-max",
+          "whyWrong": "$20\\ \\text{N}$ is the *maximum* static friction, not the actual value."
+        },
+        {
+          "key": "B",
+          "text": "$12.5\\ \\text{N}$",
+          "misconceptionId": "phy.nlm.friction.kinetic-when-at-rest",
+          "whyWrong": "Kinetic friction applies only if the block slides, and it doesn't."
+        },
+        {
+          "key": "C",
+          "text": "$15\\ \\text{N}$"
+        },
+        {
+          "key": "D",
+          "text": "$0\\ \\text{N}$",
+          "whyWrong": "Friction is not zero. It must oppose the applied force to keep the block at rest."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "C"
+        ]
+      },
+      "solution": "**Key idea:** check whether the block moves before choosing a friction formula.\n\n1. Limiting static friction $= \\mu_s mg = 0.4 \\times 50 = 20\\ \\text{N}$\n2. Applied force $15\\ \\text{N} < 20\\ \\text{N}$, so the block stays at rest.\n3. Static friction balances the applied force: **$f = 15\\ \\text{N}$**",
+      "hints": [
+        "Compare the applied force with $\\mu_s N$.",
+        "If the block does not move, what must the net horizontal force be?"
+      ],
+      "difficulty": 3,
+      "expectedTimeSec": 90,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

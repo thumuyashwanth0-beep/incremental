@@ -1,0 +1,98 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:chem-vsepr-001",
+      "topicId": "chem.bonding.vsepr",
+      "type": "single",
+      "stem": "The shape of the $\\text{XeF}_4$ molecule is",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tetrahedral",
+          "misconceptionId": "chem.bonding.vsepr.ignores-lone-pairs",
+          "whyWrong": "Four bonded atoms doesn't mean tetrahedral. The two lone pairs were ignored."
+        },
+        {
+          "key": "B",
+          "text": "Square planar"
+        },
+        {
+          "key": "C",
+          "text": "See-saw",
+          "whyWrong": "See-saw needs 4 bond pairs and **1** lone pair (e.g. $\\text{SF}_4$). Xe has 2."
+        },
+        {
+          "key": "D",
+          "text": "Octahedral",
+          "misconceptionId": "chem.bonding.vsepr.geometry-vs-shape",
+          "whyWrong": "That is the electron-pair geometry, not the molecular shape."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** count electron domains around Xe.\n\n1. Xe has 8 valence electrons; 4 are used in Xe–F bonds, leaving 2 lone pairs.\n2. 6 domains → octahedral electron geometry.\n3. Lone pairs sit opposite each other → **square planar** shape.",
+      "hints": [
+        "How many lone pairs remain on Xe after forming four bonds?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 60,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    },
+    {
+      "externalId": "orig:chem-mot-001",
+      "topicId": "chem.bonding.mot",
+      "type": "single",
+      "stem": "Which of the following species is paramagnetic?",
+      "options": [
+        {
+          "key": "A",
+          "text": "$\\text{N}_2$",
+          "whyWrong": "14 electrons: all MOs up to $\\sigma_{2p}$ are doubly filled."
+        },
+        {
+          "key": "B",
+          "text": "$\\text{O}_2$"
+        },
+        {
+          "key": "C",
+          "text": "$\\text{O}_2^{2-}$",
+          "whyWrong": "The two extra electrons pair up in the $\\pi^*$ orbitals, so peroxide is diamagnetic."
+        },
+        {
+          "key": "D",
+          "text": "$\\text{CO}$",
+          "whyWrong": "CO is isoelectronic with $\\text{N}_2$ (14 e⁻): all paired."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** fill molecular orbitals and look for unpaired electrons.\n\n- $\\text{O}_2$ (16 e⁻): $\\pi^*_{2p_x}{}^1\\,\\pi^*_{2p_y}{}^1$, so there are **2 unpaired electrons: paramagnetic**.\n- $\\text{N}_2$ and $\\text{CO}$ (14 e⁻): all paired.\n- $\\text{O}_2^{2-}$ (18 e⁻): $\\pi^*$ orbitals full, all paired.",
+      "hints": [
+        "Count total electrons for each species."
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 75,
+      "skills": [
+        "concept-check"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

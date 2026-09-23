@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:phy-photo-001",
+      "topicId": "phy.dual-nature.photoelectric",
+      "type": "single",
+      "stem": "Light of wavelength $310\\ \\text{nm}$ falls on a metal of work function $2.0\\ \\text{eV}$. The stopping potential is (take $hc = 1240\\ \\text{eV nm}$)",
+      "options": [
+        {
+          "key": "A",
+          "text": "$4.0\\ \\text{V}$",
+          "misconceptionId": "phy.dual-nature.photoelectric.forgets-work-function",
+          "whyWrong": "This is the photon energy. The work function wasn't subtracted."
+        },
+        {
+          "key": "B",
+          "text": "$2.0\\ \\text{V}$"
+        },
+        {
+          "key": "C",
+          "text": "$6.0\\ \\text{V}$",
+          "whyWrong": "The work function was added instead of subtracted."
+        },
+        {
+          "key": "D",
+          "text": "$1.0\\ \\text{V}$",
+          "whyWrong": "$eV_0 = KE_{max}$ directly, so $V_0$ in volts equals $KE_{max}$ in eV. There is no factor of ½."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "B"
+        ]
+      },
+      "solution": "**Key idea:** $eV_0 = KE_{max} = \\dfrac{hc}{\\lambda} - \\phi$.\n\n1. Photon energy $= 1240/310 = 4.0\\ \\text{eV}$\n2. $KE_{max} = 4.0 - 2.0 = 2.0\\ \\text{eV}$\n3. **$V_0 = 2.0\\ \\text{V}$**",
+      "hints": [
+        "Convert wavelength to energy with $E = 1240/\\lambda$ (eV, nm)."
+      ],
+      "difficulty": 3,
+      "expectedTimeSec": 90,
+      "skills": [
+        "formula-recall",
+        "unit-conversion"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "externalId": "orig:math-pnc-001",
+      "topicId": "math.pnc.permutations-combinations",
+      "type": "single",
+      "stem": "The number of distinct arrangements of the letters of the word $\\text{LEVEL}$ is",
+      "options": [
+        {
+          "key": "A",
+          "text": "$120$",
+          "misconceptionId": "math.pnc.permutations-combinations.ignores-repetition",
+          "whyWrong": "All five letters were treated as different."
+        },
+        {
+          "key": "B",
+          "text": "$60$",
+          "misconceptionId": "math.pnc.permutations-combinations.ignores-repetition",
+          "whyWrong": "Only one of the two repeated letters was accounted for."
+        },
+        {
+          "key": "C",
+          "text": "$30$"
+        },
+        {
+          "key": "D",
+          "text": "$15$",
+          "whyWrong": "Divided by an extra factor of 2. Only L and E repeat, each twice."
+        }
+      ],
+      "answer": {
+        "kind": "choice",
+        "keys": [
+          "C"
+        ]
+      },
+      "solution": "**Key idea:** $\\dfrac{n!}{p!\\,q!}$ for repeated letters.\n\nL appears 2 times and E 2 times: $\\dfrac{5!}{2!\\,2!} = \\dfrac{120}{4} =$ **30**",
+      "hints": [
+        "Which letters repeat, and how many times?"
+      ],
+      "difficulty": 2,
+      "expectedTimeSec": 45,
+      "skills": [
+        "counting"
+      ],
+      "source": "original",
+      "sourceRef": "hand-authored seed set",
+      "license": "proprietary",
+      "status": "published"
+    }
+  ]
+}

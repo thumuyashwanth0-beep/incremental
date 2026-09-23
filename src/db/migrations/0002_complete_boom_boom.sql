@@ -1,0 +1,1 @@
+ALTER TABLE "practice_sessions" ADD COLUMN "current_hints_used" smallint DEFAULT 0 NOT NULL;
