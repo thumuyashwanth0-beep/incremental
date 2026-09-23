@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neuroevolution Snake</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>🐍 Neuroevolution Snake</h1>
+    <p class="subtitle">A population of snakes evolves a small neural network to play Snake using a genetic algorithm &mdash; no training data, no backprop, just mutation, crossover and survival of the fittest.</p>
+  </header>
+
+  <main>
+    <section class="game-panel">
+      <canvas id="gameCanvas" width="384" height="384"></canvas>
+      <div class="game-stats">
+        <div><span class="label">Leader score</span><span id="leaderScore">0</span></div>
+        <div><span class="label">Leader steps</span><span id="leaderSteps">0</span></div>
+        <div><span class="label">Alive</span><span id="aliveCount">0</span>&nbsp;/&nbsp;<span id="popCount">0</span></div>
+      </div>
+    </section>
+
+    <section class="viz-panel">
+      <h2>Leader's brain <span class="hint-inline">(green = excited, lines = weights)</span></h2>
+      <canvas id="nnCanvas" width="380" height="230"></canvas>
+      <h2>Best score per generation</h2>
+      <canvas id="chartCanvas" width="380" height="110"></canvas>
+    </section>
+
+    <aside class="control-panel">
+      <div class="stat-grid">
+        <div class="stat"><span class="stat-value" id="generation">0</span><span class="stat-label">Generation</span></div>
+        <div class="stat"><span class="stat-value" id="bestEver">0</span><span class="stat-label">Best ever</span></div>
+        <div class="stat"><span class="stat-value" id="avgScore">0</span><span class="stat-label">Last gen avg</span></div>
+      </div>
+
+      <div class="controls">
+        <button id="toggleRun" class="primary">Pause</button>
+        <button id="nextGenBtn">Skip Generation</button>
+        <button id="resetBtn" class="danger">Reset Population</button>
+      </div>
+
+      <label class="field">
+        <span>Speed <em id="speedVal">40</em></span>
+        <input type="range" id="speedSlider" min="1" max="100" value="40">
+      </label>
+      <label class="field checkbox">
+        <input type="checkbox" id="turboCheck">
+        <span>Turbo &mdash; train as fast as possible (rendering slows down)</span>
+      </label>
+
+      <fieldset>
+        <legend>Training method</legend>
+        <label class="field">
+          <span>Operation</span>
+          <select id="trainingMethod">
+            <option value="evolution">Genetic algorithm (evolution)</option>
+            <option value="backprop">Backpropagation (supervised)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset id="gaFieldset">
+        <legend>Genetic algorithm <small>(pop &amp; hidden size apply on reset)</small></legend>
+        <label class="field">
+          <span>Population size</span>
+          <input type="number" id="popSize" min="10" max="400" value="120">
+        </label>
+        <label class="field">
+          <span>Hidden neurons</span>
+          <input type="number" id="hiddenSize" min="4" max="32" value="16">
+        </label>
+        <label class="field">
+          <span>Mutation rate <em id="mutRateVal">0.06</em></span>
+          <input type="range" id="mutRate" min="0" max="1" step="0.01" value="0.06">
+        </label>
+        <label class="field">
+          <span>Mutation amount <em id="mutAmtVal">0.25</em></span>
+          <input type="range" id="mutAmt" min="0" max="1" step="0.01" value="0.25">
+        </label>
+      </fieldset>
+
+      <fieldset id="bpFieldset" hidden>
+        <legend>Backpropagation <small>(trains on data generated from a pathfinding oracle)</small></legend>
+        <label class="field">
+          <span>Training samples</span>
+          <input type="number" id="bpSamples" min="200" max="20000" value="4000">
+        </label>
+        <label class="field">
+          <span>Epochs</span>
+          <input type="number" id="bpEpochs" min="1" max="500" value="40">
+        </label>
+        <label class="field">
+          <span>Learning rate <em id="bpLrVal">0.050</em></span>
+          <input type="range" id="bpLr" min="0.001" max="0.3" step="0.001" value="0.05">
+        </label>
+        <label class="field">
+          <span>Batch size</span>
+          <input type="number" id="bpBatch" min="1" max="512" value="32">
+        </label>
+        <div class="controls">
+          <button id="bpTrainBtn" class="primary">Generate data &amp; train</button>
+          <button id="bpSeedBtn" disabled>Seed evolution with this brain</button>
+        </div>
+        <p class="hint" id="bpStatus">Not trained yet.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Best brain</legend>
+        <div class="controls">
+          <button id="watchBtn" disabled>Watch best</button>
+          <button id="exportBtn" disabled>Export JSON</button>
+          <button id="importBtn">Import JSON</button>
+        </div>
+        <input type="file" id="importFile" accept="application/json" hidden>
+        <p class="hint" id="bestHint">No saved brain yet &mdash; let it evolve for a while.</p>
+      </fieldset>
+    </aside>
+  </main>
+</div>
+<script src="script.js"></script>
+<script src="backprop.js"></script>
+</body>
+</html>
